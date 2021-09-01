@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="icon" href="images/logo2.svg"  type="image/icon type"><!--href="images/logo2.png",href="https://img.icons8.com/emoji/48/000000/glowing-star.png"-->
+
+    <!-- Primary Meta Tags -->
+    <title>MyPortfolio</title> 
+    <meta name="title" content="MyPortfolio">
+    <meta name="description" content="">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="MyPortfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="images/portfolio.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="MyPortfolio">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="images/portfolio.jpg">
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about_style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/moileSidebar.css">
+    <link rel="stylesheet" href="css/blog_style.css">
+    <link rel="stylesheet" href="css/setting.css">
+    
+</head>
+<body>
+    <div class="setting wow animate__backInLeft ani-delay-2">
+        <span class="settingIcon">
+            <!-- <i class="fas fa-cog fa-spin"></i> -->
+           <ul>
+               <li class="setIcon">
+                <i class="fas fa-cog"></i>
+               </li>
+               <li disabled class="setIcon change_bg">
+                <i class="fa fa-star-of-life"></i>
+               </li>
+               <li class="setIcon" id="change_color">
+                <i class="fa fa-palette change_color"></i>
+                <span class="settingItems">
+                    <ul>
+                        <li class="colors" id="blue" data-color="#3498db" data-colordark="#1b1be6" data-mbActive="#3498db" data-sideBg1="#00002091" data-sideBg2="#5278eb57" data-sideBg3="#21259354" data-sideBg4="#23399240" data-sideBg5="#00001cbd" data-bgcolor="#080c2b"></li><!-- #000631c9-->
+                        <li class="colors" id="red" data-color="#e74c3c" data-colordark="#8a0d00" data-mbActive="#e74c3c" data-sideBg1="#2d0000b3" data-sideBg2="#ef435982" data-sideBg3="#ff032157" data-sideBg4="#dc3e5266" data-sideBg5="#430102d6" data-bgcolor="#290400"></li>
+                        <li class="colors" id="purple" data-color="#9b50b6" data-colordark="#7904a3" data-mbActive="#9b50b6" data-sideBg1="#0c001557" data-sideBg2="#aa67ea47" data-sideBg3="#44255c7d" data-sideBg4="#4f3a5f80" data-sideBg5="#17071ab5" data-bgcolor="#1c0a25"></li><!--#0d0013,#1c0a25,#30123e-->
+                        <li class="colors" id="yellow" data-color="#009688" data-colordark="#53f7e7" data-mbActive="#53f7e7"></li>
+                        <li class="colors" id="primary" data-color="#fcba04" data-colordark="#ff9800" data-mbActive="#fcba04"></li>
+                        <li class="colors" id="orange" data-color="#e67e22" data-colordark="#ff7600" data-mbActive="#271300" data-sideBg1="#391600c7" data-sideBg2="#fb8b2491" data-sideBg3="#ff6d004f" data-sideBg4="#fe7f2d7a" data-sideBg5="#391600c9" data-bgcolor="#271300"></li><!--#271300,#502600-->
+                        <li class="colors" id="green" data-color="#2ecc71" data-colordark="#24dc32" data-mbActive="#031b04" data-sideBg1="#001e0d" data-sideBg2="#47bf7980" data-sideBg3="#397d5580" data-sideBg4="#38d0774d" data-sideBg5="#001e0d" data-bgcolor="#031b04"></li>
+                    </ul>
+                </span>
+               </li>
+           </ul>
+        </span>        
+    </div>
+    <!-- <div class="star" id="addTwinkleid"></div> -->
+    <!-- Sidebar nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sidebarNavigation d-lg-none">
+        <div class="container-fluid d-flex justify-content-between justify-content-md-end align-items-center">
+          <a class="navbar-brand d-sm-block d-md-none order-0 order-lg-0 ml-lg-0 mr-2 ml-auto text-warning fw-bold brand-title text-uppercase" href="blog.html">Blog</a>
+          <a class="navbar-toggler align-self-start mt-1" type="button">
+            <!-- <i class="fa fa-times"></i> -->
+            <i class="fa fa-bars"></i>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+          </a>
+          <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end p-3 p-lg-0 mt-lg-0 mobileMenu" id="navbarSupportedContent">
+            <ul class="navbar-nav align-self-stretch">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">
+                    <i class="fa fa-home me-1"></i>
+                    Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">
+                    <i class="fa fa-user me-1"></i>
+                    About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">
+                    <i class="fa fa-briefcase me-1"></i>
+                    Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                    <i class="fa fa-envelope-open me-1"></i>
+                    Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="blog.html">
+                    <i class="fa fa-comment me-1"></i>
+                    Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="overlay d-lg-none"></div>
+    <!-- Sidebar end nav -->
+    <!-- HEADER -->
+    <header class="header">
+        <ul class="icon-menu d-none d-lg-block">
+            <li class="icon-box">
+                <i class="fa fa-home"></i>
+                <a href="index.html">
+                    <h2>Home</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                    <i class="fa fa-user"></i>
+                    <a href="about.html">
+                        <h2>About</h2>
+                    </a>
+                </li>
+            <li class="icon-box">
+                <i class="fa fa-briefcase"></i>
+                <a href="portfolio.html">
+                    <h2>Portfolio</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-envelope-open"></i>
+                <a href="contact.html">
+                    <h2>Contact</h2>
+                </a>
+            </li>
+            <li class="icon-box active">
+                <i class="fa fa-comments"></i>
+                <a href="blog.html">
+                    <h2>Blog</h2>
+                </a>
+            </li>
+        </ul>
+       </header>
+    <!--END HEADER -->
+     <!-- Blog -->
+     <section class="blogSection">
+        <div class="container">
+            <div class="row">
+                <div class="container-fluid">
+                    <!-- blog header -->
+                    <div class="row pageHeading">
+                        <div class="col-12 d-md-block">
+                            <div class="mt-5 mb-5 d-flex justify-content-center align-items-center">
+                                <h1 class="title-bg text-uppercase fw-bolder position-absolute mb-0 wow animate__zoomIn">Posts</h1>
+                                <h1 class="title position-relative text-uppercase fw-bolder mb-0 wow animate__backInUp">My<span
+                                        class="fw-bolder ss"> Blog</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <ul id="filterButtons" class="wow animate__fadeInRight">
+                        <li  class="list activeList" data-filter="all">All</li>
+                        <li  class="list" data-filter="webDevelopment">WebDev</li>
+                        <li  class="list" data-filter="frontEnd" >FrontEnd</li>
+                        <li  class="list" data-filter="backEnd">BackEnd</li>
+                        <li  class="list" data-filter="graphic">Graphic</li>
+                        <li  class="list" data-filter="general">General</li>
+                    </ul>
+                    <!-- portfolio body -->
+                    <div class="row" id="blog">
+                           <!-- <div class="filter"></div> -->
+                    </div>
+                    </div>
+                    <nav class="">
+                        <ul class="pagination justify-content-center mt-4 ">
+                            <li class="page-item prev disabled">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true" class="prevLink">&laquo;</span>
+                            </a>
+                            </li>
+                            <!-- <li><a href="#">page<span class="page-num"></span></a></li> -->
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item next">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true" class="nextLink">&raquo;</span>
+                            </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/wow/wow.js"></script>
+    <script src="vendor/way_point/jquery.waypoints.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/mobileSiderbar.js"></script>
+    <script src="js/blog_data.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/setting.js"></script>
+    <script>
+        let filterButtons = document.getElementById('filterButtons');
+        let list = document.getElementsByClassName('list');
+        let blog=document.querySelector("#blog");
+        let blogMainContents = blog_data.blogMainContents;
+        let itemBox = document.getElementsByClassName("itemBox");
+        let filter=document.querySelectorAll(".filter");
+        for(let i=0;i<list.length;i++){
+            list[i].addEventListener('click',function(){
+                
+                    for(let j=0;j<list.length;j++){
+                        list[j].classList.remove('activeList');
+                    }
+                    this.classList.add('activeList');
+                    toshow();
+                    let dataFilter = this.getAttribute('data-filter');
+                       // blog.filter(itemBox);
+                       function filterSelection(c){
+                            for(let k=0;k<itemBox.length;k++){
+                                itemBox[k].classList.remove('show');
+                                itemBox[k].classList.add('hide');
+
+                                console.log(dataFilter);
+                                if(itemBox[k].getAttribute('data-item')==dataFilter || 
+                                itemBox[k].getAttribute('data-item2')==dataFilter || itemBox[k].getAttribute('data-item3')==dataFilter || 
+                                dataFilter=='all')
+                                {
+                                itemBox[k].classList.remove('hide');
+                                itemBox[k].classList.add('show');
+                                }
+                            }
+                        }   
+                    filterSelection();                   
+            });
+        };
+        
+                       
+    //product titleနဲ့textတွေကို short string အရေအတွက် သတ်မှတ်ပေးချင်လို့
+    function toShort(str,max=50){
+        if(str.length > max ){
+            return str.substring(0,max)+" ..."
+        }
+        return str;
+    };
+
+
+    function toshow(x){
+        blog.innerHTML = '';
+        blogMainContents.map(function(el,index){
+            // console.log(el);
+            blog.innerHTML += `
+            <!-- blog-item ${el.id} -->
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-3 px-md-1 px-lg-3 itemBox" data-item="${el.data_item}" data-item2="${el.data_item2}" data-item3="${el.data_item3}" >
+                        <div class="card wow  animate__zoomIn">
+                            <div class="card-img">
+                                <a href="${el.href}" target="_blank">
+                                    <img src="${el.urlToImage}" class="card-img-top" alt="...">
+                                </a>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="card-body">
+                                <a href="${el.href}" target="_blank">
+                                <h6 class="card-title">${toShort(el.title,45)}</h6>
+                                <p class="card-text">${toShort(el.text,105)}</p>
+                            </a>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                <ul class="p-0 react">
+                                    <li>${el.react}</li>
+                                </ul>
+                                
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-item-center">
+                            ${el.date}
+                                <span>${el.readtime}</span>
+                            </div>
+                        </div>
+                    </div>
+                
+            `;
+        });
+    }
+toshow();
+    </script>
+
+</body>
+</html>        

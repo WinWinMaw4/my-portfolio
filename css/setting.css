@@ -1,0 +1,209 @@
+.setting{
+    position: fixed;
+    top: 45%;
+    left: 0;
+    width: 30px;
+    /* height: 30px; */
+    background-color: #fff;
+    border-radius: 0px 5px 5px 0px;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px var(--primarydark);
+    transform: translateX(-2px);
+    transition: .4s;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 0;
+    
+    /* top: 50px;
+    left: 0;
+    width: 45px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    
+}
+.setting:hover {
+    /* transform: translateX(0px); */
+    width: 45px;
+    /* height: 80px; */
+    background-color: #000;
+}
+.setting:hover i{
+    color: #fff;
+}
+.setIcon:hover i{
+    color: var(--primary);
+    animation: rotate .8s alternate infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.settingIcon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    float: right;
+    text-align: center;
+    position: relative;
+    /* padding-right: -10px; */
+}
+.settingIcon ul{
+    margin: 0;
+    list-style: none;
+
+}
+.settingIcon i{
+    color: #000008;
+    text-align: center;
+    /* padding-top: 10px; */
+    
+}
+
+.settingItems{
+    position: absolute;
+    top: 78%;
+    left: 19px;
+    z-index: 997;
+    transition: all .4s;
+}
+.setting>.settingIcon>ul>#change_color:hover .setting{
+    border-radius: 0px 5px 0px 0px;
+}
+.setting>.settingIcon>ul>#change_color:hover .settingItems>ul{
+    display: block !important;
+    height: 181px;
+}
+.settingItems ul{
+    height: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 8px 6px var(--primarydark);
+    display: none;
+    transition: all .4s;
+} 
+.settingItems ul li{
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 50%;
+    list-style: none;
+    margin: 2px;
+    cursor: pointer;
+    transition: .4s;
+}
+.settingItems ul li:hover{
+    transform: scale(1.2);
+    border-color: var(--primary);
+}
+.setIcon:disabled,.setIcon[disabled]{
+    /* color: #474747; */
+    cursor:not-allowed !important;
+  }
+#blue{
+    background: #3498db;
+}
+#red{
+    background: #e74c3c;
+}
+#purple{
+    background: #9b50b6;
+    /* background: #7209b7; */
+}
+#yellow{
+    background: #009688;
+    /* background: #f1c40f; */
+}
+#primary{
+    background-color: #fcba04;
+}
+#orange{
+    background: #e67e22;
+}
+#green{
+    background: #2ecc71;
+}
+.change_image,.change_color{
+    color:white;
+    margin-bottom: 8px;
+    
+}
+/* home */
+.star{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url('../images/bg2.gif');
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+}
+.addTwinkle{
+    display: block;
+    z-index: -1;
+}
+.butterfly{
+    background-image: url('../images/giphy.gif');
+    background-size:cover;
+    background-repeat: repeat;
+    width: 100vw;
+    height: 200vh;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: -1;
+    display: block;
+}
+.addTwinkle{
+    /* background-image: url('../images/bg2.gif'); */
+    display: block;
+    z-index: -1;
+   
+}
+.changeColor{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-image: linear-gradient(to right bottom, #000008, #030003, #af089934,#030003);
+
+    /* background-image: linear-gradient(to top left, #000008, #432541, #9a3b57, #e36745, #fbb300); */
+
+}
+@media (min-width: 372px) and (max-width:760px) 
+ {
+     .setting{
+         top: 55px !important;
+         /* left: 93%; */
+         top: 28px !important;
+         left: 86%;
+         transform: rotate(90deg);
+         /* transform: scaleX(-1); */
+         background-color: #000;
+     }
+     .setIcon i{
+         color: #Fff;
+     }    
+ }
+ @media (min-width: 992px) and (max-width:1980)
+{ 
+  
+}

@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+:root{
+    --primary:#ffc400;
+    --primarydark:#ff9800;
+    --secondary:#d3d3d3;
+    --secondary-soft:#ffffff70;
+    --chart1:#ffea00;
+    --chart2:#ffdd00;
+    --chart3:#ffd000;
+    --chart4:#ffc300;
+    --chart5:#ffc300;
+    --chart6:#ffaa00;
+    --chart7:#ffa200;
+    --chart8:#ff9500;
+    --chart9:#ff8800;
+    --chart10:#ff7b00;
+}
+*{
+    font-family:'Archivo Black', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 1px;
+}
+.setting{
+    top: 45% !important;
+}
+
+.title-bg{
+    font-size: 100px;
+    letter-spacing: 7px;
+    color: #8787872c;
+    font-family:  'Archivo Black', sans-serif;
+}
+.title{
+    font-weight: bolder;
+    font-size: 47px;
+    font-family:  'Archivo Black', sans-serif;
+}
+.title>span{
+   text-shadow: 0px -2px 0 var(--primary);
+}
+.me{
+    color: var(--primary);
+}
+.bout>h3{
+    font-family: 'Overpass', sans-serif;
+}
+.about a{
+    text-decoration: none;
+}
+.personalInfosHeader{
+    font-family: 'Overpass', sans-serif;
+}
+.infos-title{
+    font-family: 'Overpass', sans-serif;
+}
+.infos-value{
+    font-family: 'Overpass', sans-serif;
+}
+.infos>div>ul>li{
+    font-family: 'Overpass', sans-serif !important;
+    font-weight: lighter;
+    font-size: 14px;
+    list-style: none;
+    padding-bottom: 20px;
+    font-family:sans-serif;
+
+}
+.infos>div>ul>li>span:first-child{
+    /* color: var(--secondary-soft); */
+    color:#b9b5b5;
+
+}
+.infos>div>ul>li>span:last-child{
+    font-weight: bold;
+}
+sup{
+    letter-spacing: 0px;
+}
+/* about right */
+.aboutRight-item{
+    border: 1px solid #ffffff15;
+    padding: 20px 10px 20px 30px;
+    cursor: pointer;
+    transition: .4s; 
+}
+.aboutRight-item:hover{
+    transform: scale(1.1);
+    transform: skew(3deg, -3deg);
+    box-shadow: 1px -1px 11px 1px var(--primarydark);
+}
+.aboutRight-item>h1{
+    font-family:'Archivo Black', sans-serif ;
+}
+.aboutRight-item>h1>span{
+    position: relative;
+    color: var(--primary);
+}
+.aboutRight-item>h1>span::after{
+    content: '+';
+    position: absolute;
+    right: -20px;
+    font-size: 33px;
+    font-weight: 300;
+    top: -10px;
+}
+.aboutRight-item>p{
+    position: relative;
+    padding-left: 35px;
+}
+.aboutRight-item>p,.aboutRight-item>p>span{
+    font-family:'Archivo Black', sans-serif;
+    font-size: 13px;
+    position: relative;
+}
+.aboutRight-item>p::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 30px;
+    height: 1px;
+    background: #777;
+
+}
+/* myskill*/
+.skill-header>h2{
+    font-family:  'Archivo Black', sans-serif;
+}
+.sk{
+    position: relative;
+    z-index: 1;
+}
+.chart-container.card{
+    background-color: #000000a4 !important;
+    /* backdrop-filter: url(../images/bg1.svg) blur(4px) saturate(150%); */
+    box-shadow: -5px 3px 20px 0px var(--primarydark);  /*#ff9800 */  
+    transition: all .6s ease;
+}
+.chart-container.card::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#fc0a93,#fae100,#03a9f4);
+    background-size: 400%;
+    opacity: 0;
+    transition: .5s;
+}
+.chart-container.card:hover{
+    background-color: #000000 !important;
+    box-shadow: none;
+}
+.chart-container.card:hover::before{
+    filter: blur(15px);
+    opacity: 1;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%{
+		background-position: 0 0;
+	}
+	50%
+	{
+		background-position: 400% 0;
+	}
+	100%
+	{
+		background-position: 0 0;
+	}
+}
+.skills{
+    line-height: 3;
+}
+.progress{
+    background-color: #000000;
+}
+.progress-bar{
+    padding-top: 3px;
+    
+}
+/* <!-- EXPERIENCE & EDUCATION --> */
+.resumebox{
+    
+    letter-spacing: normal;
+}
+.resumeIcon{
+    transition: .4s;
+    background-color: var(--primary);
+}
+.resumeIcon i{
+    transition: .4s;
+}
+.time{
+    background-color: rgba(255, 255, 255, 0.164);
+    font-size: 10px;
+    color: var(--secondary-soft);
+    transition: .4s;    
+}
+.resumebox ul li{
+    margin-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.resumeTitle{
+    transition: .4s;
+}
+.resumebox ul li:hover .resumeBody .time{
+    color: rgba(255, 255, 255, 0.678) !important;
+}
+.resumebox ul li:hover .resumeIcon i{
+    transform: scale(1.1) rotateY(150deg);
+    color: var(--primary) !important;
+    text-shadow: 1px 2px 3px #5f5f5f;
+}
+.resumebox ul li:hover .resumeIcon{
+    background-color: #fff !important;
+    box-shadow: 0px 1px 15px 5px var(--primarydark);
+
+}
+.resumebox ul li:hover .resumeTitle{
+    color: var(--primary) ;
+}
+.resumebox>ul>li>h3{
+    letter-spacing: normal;
+}
+.resumeBody>p{
+    font-family: 'Overpass', sans-serif;
+    color: darkgrey;
+}
+.resumebox>ul>li::after{
+    content: '';
+    width: 1px;
+    height: 120px;
+    border-left: 1px solid #ffffff15;
+    position: absolute;
+    top: 0px;
+    left: 22px;
+    bottom: 0px;
+    z-index: -1;;
+}
+
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 372px) and (max-width:767px) 
+ { 
+     .about{
+         margin-top: 12px;
+     }
+     .aboutBodyContainer{
+         padding: 0px;
+     }
+     .personalInfosHeader,.skill-header>h2{
+         font-size: medium;
+     }
+     .aboutRight{
+        margin: 0px -30px 0px -33px;
+     }
+     .aboutRight>div{
+         padding: 0;
+         margin: 10px;
+     }
+     .aboutRight-item{
+        padding: 20px 10px 20px 30px !important;
+    }
+     .aboutRight-item>p{
+         padding: 0px !important;
+     }
+     .aboutRight-item>p::before{
+         display: none;
+     }
+     .main-img-mobile{
+        border-radius: 50%;
+        width: 200px;
+        border: 2px solid var(--primary);
+        margin-bottom: 20px;
+    }
+    .about-main-img-mobile{
+        display: block !important;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) ipad landscape*/
+@media screen and (min-width: 768px) and (max-width: 992px)
+{
+        .about{
+            margin-left: 72px;
+
+        }
+        .skills{
+            padding: 0px 20px 0px 20px;
+        }
+}
+
+/* // Large devices (desktops, 992px and up) ipad col-lg-*/
+@media (min-width: 992px) and (max-width:1299px)
+{ 
+    .aboutRight-item{
+        padding: 20px 10px 20px 30px !important;
+    }
+}

@@ -1,0 +1,144 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap'); */
+
+.header {
+    position: fixed;
+    right: 30px;
+    bottom: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 200px);
+    top: 100px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    
+}
+.header ul.icon-menu li.icon-box {
+    background-color: #eee;
+}
+.header ul.icon-menu li.icon-box {
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    margin: 20px 0;
+    border-radius: 50%;
+    background: #d3d0d04a;
+
+}
+.header ul.icon-menu li.icon-box i {
+    color: #fff;
+    font-size: 19px;
+    transition: .3s;
+    background-color: transparent;
+}
+.header .icon-box i.fa {
+    position: absolute;
+    left: 15px;
+    pointer-events: none;
+
+}
+.header .icon-box a {
+    display: block;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+.header .icon-box h2 {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    color: #fff;
+    line-height: 50px;
+    font-weight: 500;
+    transition: all .3s;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 0 25px 0 30px;
+    height: 50px;
+    margin-top: 0;
+    font-family:'Archivo Black','Overpass', sans-serif;
+}
+.icon-box h2{
+    font-size: 15px;
+}
+.header .icon-box:hover h2 {
+    opacity: 1;
+    right: 27px;
+    margin: 0;
+    text-align: center;
+    border-radius: 30px 0 0 30px;
+    
+}
+/* .header .icon-box a:hover h2 {
+    opacity: 1;
+    right: 27px;
+    margin: 0;
+    text-align: center;
+    border-radius: 30px 0 0 30px;
+    
+} */
+.header ul.icon-menu li.icon-box:hover,.header .icon-box h2{
+    background-color: var(--primary);
+    color: #fff;
+   
+  
+}
+.header ul.icon-menu li.icon-box:hover i{
+    color: #fff;
+    
+}
+.active>.fa{
+    color: rgb(255, 252, 247) !important;
+    
+}
+
+
+/* Side bar */
+.sidebar{
+    background:linear-gradient(to top,rgba(255, 255, 0, 0.425),rgba(0, 128, 0, 0.521));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(100px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* transform: translateX(0%); */
+    z-index: 2001;
+    padding: 20px 10px;
+    /* width:350px; */
+}
+.sidebarBtn{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+
+}
+.hide-sidebar-btn {
+    cursor: pointer;
+}
+.nav-list{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top:20px;
+}
+.nav-list >ul{
+    list-style-type:none;
+    padding:0;
+    width:100%;
+}
+.nav-list>ul>.nav-item{
+    padding:15px 15px;
+    border-radius:10px;
+    transition:all .4s ease-in-out ;
+    cursor: pointer;
+}
+.nav-list>ul>.nav-item:hover{
+    background-color:var(--primary);
+}

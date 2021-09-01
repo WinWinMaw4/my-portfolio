@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="icon" href="images/logo2.svg"  type="image/icon type"><!--href="images/logo2.png",href="https://img.icons8.com/emoji/48/000000/glowing-star.png"-->
+
+    <!-- Primary Meta Tags -->
+    <title>MyPortfolio</title> 
+    <meta name="title" content="MyPortfolio">
+    <meta name="description" content="">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="MyPortfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="images/portfolio.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="MyPortfolio">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="images/portfolio.jpg">
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about_style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/moileSidebar.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/setting.css">
+
+    
+</head>
+<body>
+    <div class="setting wow animate__backInLeft ani-delay-2">
+        <span class="settingIcon">
+            <!-- <i class="fas fa-cog fa-spin"></i> -->
+           <ul>
+               <li class="setIcon">
+                <i class="fas fa-cog"></i>
+               </li>
+               <li disabled class="setIcon change_bg">
+                <i class="fa fa-star-of-life"></i>
+               </li>
+               <li class="setIcon" id="change_color">
+                <i class="fa fa-palette change_color"></i>
+                <span class="settingItems">
+                    <ul>
+                        <li class="colors" id="blue" data-color="#3498db" data-colordark="#1b1be6" data-preview="#3498db" data-mbActive="#3498db" data-sideBg1="#00002091" data-sideBg2="#5278eb57" data-sideBg3="#21259354" data-sideBg4="#23399240" data-sideBg5="#00001cbd" data-bgcolor="#080c2b"></li><!-- #000631c9-->
+                        <li class="colors" id="red" data-color="#e74c3c" data-colordark="#8a0d00" data-preview="#e74c3c" data-mbActive="#e74c3c" data-sideBg1="#2d0000b3" data-sideBg2="#ef435982" data-sideBg3="#ff032157" data-sideBg4="#dc3e5266" data-sideBg5="#430102d6" data-bgcolor="#290400"></li>
+                        <li class="colors" id="purple" data-color="#9b50b6" data-colordark="#7904a3" data-preview="#9b50b6" data-mbActive="#9b50b6" data-sideBg1="#0c001557" data-sideBg2="#aa67ea47" data-sideBg3="#44255c7d" data-sideBg4="#4f3a5f80" data-sideBg5="#17071ab5" data-bgcolor="#1c0a25"></li><!--#0d0013,#1c0a25,#30123e-->
+                        <li class="colors" id="yellow" data-color="#009688" data-colordark="#53f7e7" data-preview="#53f7e7" data-mbActive="#53f7e7"></li>
+                        <li class="colors" id="primary" data-color="#fcba04" data-colordark="#ff9800" data-preview="#fcba04" data-mbActive="#fcba04"></li>
+                        <li class="colors" id="orange" data-color="#e67e22" data-colordark="#ff7600" data-preview="#e67e22" data-mbActive="#271300" data-sideBg1="#391600c7" data-sideBg2="#fb8b2491" data-sideBg3="#ff6d004f" data-sideBg4="#fe7f2d7a" data-sideBg5="#391600c9" data-bgcolor="#271300"></li><!--#271300,#502600-->
+                        <li class="colors" id="green" data-color="#2ecc71" data-colordark="#24dc32" data-preview="#2ecc71" data-sideBg1="#031b04" data-sideBg2="#47bf7980" data-sideBg3="#397d5580" data-sideBg4="#38d0774d" data-sideBg5="#001e0d" data-mbActive="#001e0d" data-bgcolor="#031b04"></li>
+                    </ul>
+                </span>
+               </li>
+           </ul>
+        </span>
+    </div>
+    <!-- <div class="star" id="addTwinkleid"></div> -->
+
+    <!-- Sidebar nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sidebarNavigation d-lg-none">
+        <div class="container-fluid d-flex justify-content-between justify-content-md-end align-items-center">
+          <a class="navbar-brand d-sm-block d-md-none order-0 order-lg-0 ml-lg-0 mr-2 ml-auto text-warning fw-bold brand-title text-uppercase" href="portfolio.html">Portfolio</a>
+          <a class="navbar-toggler align-self-start mt-1" type="button">
+            <!-- <i class="fa fa-times"></i> -->
+            <i class="fa fa-bars"></i>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+          </a>
+          <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end p-3 p-lg-0 mt-lg-0 mobileMenu" id="navbarSupportedContent">
+            <ul class="navbar-nav align-self-stretch">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">
+                    <i class="fa fa-home me-1"></i>
+                    Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">
+                    <i class="fa fa-user me-1"></i>
+                    About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="portfolio.html">
+                    <i class="fa fa-briefcase me-1"></i>
+                    Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                    <i class="fa fa-envelope-open me-1"></i>
+                    Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">
+                    <i class="fa fa-comment me-1"></i>
+                    Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="overlay d-lg-none"></div>
+    <!-- Sidebar end nav -->
+
+    <!-- HEADER -->
+    <header class="header">
+        <ul class="icon-menu d-none d-lg-block">
+            <li class="icon-box">
+                <i class="fa fa-home"></i>
+                <a href="index.html">
+                    <h2>Home</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                    <i class="fa fa-user"></i>
+                    <a href="about.html">
+                        <h2>About</h2>
+                    </a>
+                </li>
+            <li class="icon-box active">
+                <i class="fa fa-briefcase"></i>
+                <a href="portfolio.html">
+                    <h2>Portfolio</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-envelope-open"></i>
+                <a href="contact.html">
+                    <h2>Contact</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-comments"></i>
+                <a href="blog.html">
+                    <h2>Blog</h2>
+                </a>
+            </li>
+        </ul>
+       </header>
+    <!--END HEADER -->
+
+    <!-- PORTFOLIO -->
+    <section class="portfolioSection">
+        <div class="container">
+            <div class="row">
+                <div class="container-fluid">
+                    <!-- portfolio header -->
+                    <div class="row pageHeading">
+                        <div class="col-12 d-md-block">
+                            <div class="mt-5 mb-5 d-flex justify-content-center align-items-center">
+                                <h1 class="title-bg text-uppercase fw-bolder position-absolute mb-0 wow animate__zoomIn">Works</h1>
+                                <h1 class="title position-relative text-uppercase fw-bolder mb-0 wow animate__backInUp">My<span
+                                        class="fw-bolder ss"> Portfolio</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- portfolio body -->
+                    <div class="row" id="portfolio">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MOdal Box Only -->
+    <section>
+            <div class="" id="portfolioModalDialog">
+
+            </div>
+            
+    </section>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+    <script src="vendor/wow/wow.js"></script>
+    <script src="vendor/way_point/jquery.waypoints.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/mobileSiderbar.js"></script>
+    <script src="js/setting.js"></script>
+    <script src="js/portfolio_data.js"></script>
+    <script>
+        console.log(portfolio_data);
+        let portfolioMainImage = portfolio_data.portfolioMainImages;
+        let portfolio = document.querySelector("#portfolio");
+        portfolioMainImage.map(function(el,index){
+            console.log(el);
+            portfolio.innerHTML += `
+            <!-- pfl-item ${el.id} -->
+            <div class="col-lg-4 col-md-6  col-sm-12 snake">
+                           <div class="pfl_item  mb-4 px-2 py-2 overflow-hidden wow ${el.animated}">
+                            <div class="pfl-img">
+                                <img src="${el.urlToImage}" alt="">
+                                <div class="prtoverlay" >
+                                    <div class="text" id="messengerShow" data-bs-toggle="modal" data-bs-target="#messengerProject${el.id}">${el.text}
+                                        <!-- <button class="btn btn-primary" >Details</button> -->
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+            `;
+        });
+
+        //modal popup with js
+        let portfolioPopupBox = portfolio_data.portfolioPopupBox;
+        let ModalBox = document.querySelector("#portfolioModalDialog");
+        portfolioPopupBox.map(function(el,index){
+            console.log(el);
+            ModalBox.innerHTML +=`
+            <!-- Modal ${el.id}-->
+            <div class="modal fade" id="messengerProject${el.id}" data-bs-backdrop="static" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title fw-bold">${el.projectTitle}</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <!-- Project Details Starts -->
+                            <figcaption>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 mb-2">
+                                        <i class="fas fa-file-alt pe-2 modal-icon"></i><span class="project-label fw-lighter modal-icon-title">Project : </span> <span class="fw-bold text-capitalize modal-contentType">${el.projectType}</span>
+                                    </div>
+                                    <div class="col-12 col-sm-6 mb-2">
+                                        <i class="fas fa-user-alt pe-2 modal-icon"></i><span class="project-label fw-lighter modal-icon-title">Client : </span> <span class="fw-bold  text-capitalize modal-contentType">${el.client}</span>
+                                    </div>
+                                    <div class="col-12 col-sm-6 mb-2">
+                                        <i class="fa fa-code pe-2 modal-icon"></i><span class="project-label fw-lighter modal-icon-title">Languages : </span> <span class="fw-bold  text-capitalize modal-contentType">${el.languages}</span>
+                                    </div>
+                                    <div class="col-12 col-sm-6 mb-2">
+                                        <i class="fas fa-external-link-alt pe-2 modal-icon"></i><span class="project-label fw-lighter modal-icon-title">Preview : </span> <span class="fw-bold  text-lowercase modal-contentType"><a href="${el.href}" class="preview" target="_blank">${el.preview}</a></span>
+                                    </div>
+                                </div>
+                            </figcaption>
+                            <!-- Project Details Ends -->
+                            <!-- Main Project Content Starts -->
+                            <img src="${el.urlToImage}" class="img-fluid" class="modal-img" alt="Portolio Image">
+                            <!-- Main Project Content Ends -->
+                        </figure>
+                        <!-- <button type="button" class="btn btn-outline-light float-end" data-bs-dismiss="modal">Close</button> -->
+                    </div>
+                    <div class="modal-footer border border-0">
+                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+                    <button type="button" class="btn btn-outline-light float-end" data-bs-dismiss="modal">Close</button> 
+                     </div>
+                </div>
+                </div>
+            </div>
+            `;
+        })
+
+        // direction aware
+        // $(".snake").snakeify({
+        //     speed:200
+        // });
+    </script>
+   
+</body>
+</html>
