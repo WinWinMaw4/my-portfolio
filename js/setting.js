@@ -58,10 +58,10 @@ function changeBgFun2(){
     console.log('butterfly')
     let butterfly = document.querySelector('#butterfly');
     console.log(butterfly);
-    if( butterfly && butterfly.style.display == 'block') {
-        butterfly.style.display = 'none';}
+    if( butterfly && butterfly.style.display == 'none') {
+        butterfly.style.display = 'block';}
     else{
-    butterfly.style.display = 'block';
+    butterfly.style.display = 'none';
     }
 }
 

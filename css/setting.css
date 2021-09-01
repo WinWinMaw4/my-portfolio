@@ -168,7 +168,7 @@
     top: 10%;
     left: 0;
     z-index: -1;
-    display: block;
+    display: none;
 }
 .addTwinkle{
     /* background-image: url('../images/bg2.gif'); */
