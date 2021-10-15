@@ -42,7 +42,7 @@
             <!-- <i class="fas fa-cog fa-spin"></i> -->
            <ul>
                <li class="setIcon">
-                <i class="fas fa-spin fa-cog"></i>
+                <i class="fas fa-cog"></i>
                </li>
                <li class="setIcon change_bg">
                 <i class="fa fa-star-of-life"></i>
@@ -211,7 +211,7 @@
                                 <li class="mb-3">
                                     <div class=" d-flex align-items-center wow animate__backInLeft ani-delay-4">
                                         <i class="fa fa-2x fa-phone-square-alt text-warning me-3"></i>
-                                        <small class="d-block text-muted fw-bold text-uppercase aa" title="you can call me" itemprop="telephone">call me <br><span class="text-lowercase"><a href="tel:+9599602690--" class="aa">+9599602690</a></span></small>
+                                        <small class="d-block text-muted fw-bold text-uppercase aa" title="you can call me" itemprop="telephone">call me <br><span class="text-lowercase"><a href="tel:+959960269033" class="aa">+959960269033</a></span></small>
                                     </div>
                                 </li>
                             </ul>
@@ -223,10 +223,10 @@
                                         </div>
                                     </li>
                                 </a>
-                                <a href="#" target="_blank" title="twitter">
+                                <a href="viber://chat?number=+959960269033" target="_blank" title="viber">
                                         <li>
                                             <div class="rounded-circle d-flex justify-content-center align-items-center wow animate__rotateIn ani-delay-7">
-                                                <i class="fab fa-1x fa-twitter"></i>
+                                                <i class="fab fa-1x fa-viber"></i>
                                             </div>
                                         </li>
                                     </a>
@@ -250,7 +250,7 @@
                     <!-- contact body right part -->
                     <div class="col-lg-8 col-md-12 col-sm-12">
                         <div class="contact-body-right">
-                            <form action="https://formsubmit.co/mawinwinmaw4@email.com" autocomplete="off" method="POST">
+                            <form action="https://formsubmit.co/mawinwinmaw4@gmail.com" target="_blank" autocomplete="off" method="POST">
                                 <div class="row send-mail my-lg-3 mx-lg-4 mx-md-0">
                                     <div class="col-md-4 col-sm-12 mb-4 wow animate__backInRight ani-delay-1">
                                         <input type="text" name="name"  class="form-control-plaintext aa" placeholder="YOUR NAME" required>
@@ -303,15 +303,15 @@
         let sendMailBtn = document.querySelector(".send-mail-btn");
         let thankyouAlert = document.querySelector("#thankyou");
 
-        sendMailBtn.addEventListener("click",()=>{
+        sendMailBtn.addEventListener("submit",()=>{
            submitBtn();
         //    thankyouAlert.style.display = "block";
 
         });
         let submitBtn = ()=>{
-            if(sendMailBtn.clicked == true){
+            if(sendMailBtn.onsubmint()){
                 console.log("hello");
-                thankyouAlert.style.display = "block";
+                thankyouAlert.style.display = "block";                
             }
             else{            
                 thankyouAlert.style.display = "none";
@@ -326,7 +326,7 @@
                 const speed =  Layer.getAttribute('data-speed');
                 const x = (window.innerWidth -  e.pageX*speed)/100;
                 const y = (window.innerHeight -  e.pageY*speed)/100;
-                console.log(x);
+                // console.log(x);
 
                 Layer.style.transform = `translateX(${x}px) translateY(${y}px)`
             });
