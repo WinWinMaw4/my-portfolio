@@ -107,6 +107,7 @@
     font-family:'Overpass', sans-serif;
 
   }
+  
   @media (min-width: 372px) and (max-width:760px) { 
       #portfolio{
           padding: 0% 5%;
