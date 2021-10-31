@@ -212,6 +212,7 @@
     <script src="js/blog.js"></script>
     <script src="js/setting.js"></script>
     <script>
+
         let filterButtons = document.getElementById('filterButtons');
         let list = document.getElementsByClassName('list');
         let blog=document.querySelector("#blog");
@@ -293,6 +294,16 @@
         });
     }
 toshow();
+
+   //Custom scrollBar start
+   let progress = document.getElementById('progressbar');
+   let totalHeight=document.body.scrollHeight - window.innerHeight;
+   window.onscroll = function () {
+       let progressHeight = (window.pageYOffset/totalHeight)*100;
+       progress.style.height = progressHeight + "%";
+
+   }
+  //  custom scrollBar end
     </script>
 
 </body>

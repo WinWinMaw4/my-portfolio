@@ -11,12 +11,4 @@ wow = new WOW(
   wow.init();   
   //wow end
 
-   //Custom scrollBar start
-   let progress = document.getElementById('progressbar');
-   let totalHeight=document.body.scrollHeight - window.innerHeight;
-   window.onscroll = function () {
-       let progressHeight = (window.pageYOffset/totalHeight)*100;
-       progress.style.height = progressHeight + "%";
-
-   }
-  //  custom scrollBar end
+ 
