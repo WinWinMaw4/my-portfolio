@@ -151,12 +151,16 @@ a{
   .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
   }
+  .flip-box-back{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
   .flip-box-front, .flip-box-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: visible;
-    backface-visibility:visible;
+    /* -webkit-backface-visibility: visible;
+    backface-visibility:visible; */
     border-radius: 25px;
     transition: all .4s;
 
